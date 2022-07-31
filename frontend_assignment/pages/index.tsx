@@ -5,6 +5,8 @@ import { providers } from "ethers"
 import Head from "next/head"
 import React from "react"
 import styles from "../styles/Home.module.css"
+import Form from "./Form"
+import LatestGreeting from "./LatestGreeting";
 
 export default function Home() {
     const [logs, setLogs] = React.useState("Connect your wallet and greet!")
@@ -77,6 +79,12 @@ export default function Home() {
                 <div onClick={() => greet()} className={styles.button}>
                     Greet
                 </div>
+
+                <h2 className={styles.subtitle}>Simple form</h2>
+                <Form className={styles.form} />
+
+                <h2 className={styles.subtitle}>Latest on-chain greeting:</h2>
+                <LatestGreeting />
             </main>
         </div>
     )

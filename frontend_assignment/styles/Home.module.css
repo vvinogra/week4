@@ -45,7 +45,14 @@
     font-size: 4rem;
 }
 
+.subtitle {
+    margin: 2rem 1rem 1rem;
+    line-height: 1.15;
+    font-size: 1.5rem;
+}
+
 .title,
+.subtitle,
 .description {
     text-align: center;
 }
@@ -54,4 +61,8 @@
     margin: 2rem 0;
     line-height: 1.5;
     font-size: 1.5rem;
+}
+
+.form {
+    width: 400px;
 }
